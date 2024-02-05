@@ -10,12 +10,14 @@
     <form action="./form.php" method="GET">
         
         <div>
-            <input type="text" name="textUser" value="">
+            <input type="text" name="textUser" value="" placeholder="inserisci testo">
         </div>
 
-        <button>
-            invio
-        </button>
+        <div>
+            <input type="text" name="wordCensored" value="" placeholder="inserisci parola da censure">
+        </div>
+
+        <input type="submit" value="invia">
     </form>
         
     </body>

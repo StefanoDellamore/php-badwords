@@ -1,5 +1,10 @@
-<?php 
-$textUser = $_GET['textUser'];
+<?php
+
+    $userText = $_GET["textUser"];
+    $censorWord = $_GET["wordCensored"];
+
+    $censoredUserText = str_ireplace($censorWord, '***', $userText);
+
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +20,17 @@ $textUser = $_GET['textUser'];
             Back Home
         </a>
     </div>
+
     <div>
-        textUser: <?php echo $textUser; ?>
+        <h2>Stampa originale:</h2>
+        <p>Text User: <?php echo $userText ?></p>
+        <p>lunghezza paragrafo: <?php echo strlen($userText) . 'caratteri'?> </p>
+    </div>
+
+    <div>
+        <h2>Stampa censurata:</h2>
+        <p>Text User: <?php echo $censoredUserText ?></p>
+        <p>lunghezza paragrafo: <?php echo strlen($censoredUserText) . 'caratteri'?> </p>
     </div>
 </body>
 </html>
