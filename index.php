@@ -6,6 +6,17 @@
         <title>Php-badwords</title>
     </head>
     <body>
-        <h1>localhost</h1>
+        
+    <form action="./form.php" method="GET">
+        
+        <div>
+            <input type="text" name="textUser" value="">
+        </div>
+
+        <button>
+            invio
+        </button>
+    </form>
+        
     </body>
 </html>
